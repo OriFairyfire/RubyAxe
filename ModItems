@@ -1,0 +1,45 @@
+package orifairyfire.mobosses.items;
+
+import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraftforge.common.util.EnumHelper;
+import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+import orifairyfire.mobosses.blocks.RubyBlock;
+
+public class ModItems 
+{
+	@ObjectHolder("mb:ruby")
+	public static Ruby ruby;
+	
+	@ObjectHolder("mb:rubypickaxe")
+	public static RubyPickaxe rubypickaxe;
+	
+	@ObjectHolder("mb:rubyshovel")
+	public static RubyShovel rubyshovel;
+	
+	@ObjectHolder("mb:rubyhoe")
+	public static RubyHoe rubyhoe;
+	
+	@ObjectHolder("mb:rubysword")
+	public static RubySword rubysword;
+	
+	@ObjectHolder("mb:rubyaxe")
+	public static RubyAxe rubyaxe;
+	
+
+	
+	@SideOnly(Side.CLIENT)
+	public static void initModels() {
+		ruby.initModel();
+		rubypickaxe.initModel();
+		rubyshovel.initModel();
+		rubyhoe.initModel();
+		rubysword.initModel();
+		rubyaxe.initModel();
+		
+		
+	}
+	
+}
